@@ -1,0 +1,504 @@
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+        <style>
+            /* Computer screen layout */
+            @media (min-width: 800px) {
+                div.portrait {
+                    margin: 0 auto;
+                    border: 1px solid #ccc;
+                    width: 50%;
+                    height: 30%;
+                    align-content: center;
+                    display: flex;
+                    margin-top: -16.5%;
+                    z-index: 1;
+                    position: relative;
+                    margin-left: 25%;
+                }
+
+                div.aboutme {
+                    text-align: left;
+                    float: right;
+                    max-width: 50%;
+                    margin-right: 5%;
+                }
+
+                div.aboutMeIcons {
+                    position: absolute;
+                    top: 80%;
+                    left: 85%;
+                }
+
+                div.nameText {
+                    position: absolute;
+                    top: 85%;
+                    left: 0%;
+                    color: black;
+                }
+
+                div.gallery {
+                    margin: 1%;
+                    border: 1px solid #ccc;
+                    float: left;
+                    width: 31%;
+                    z-index: 1;
+                    position: relative;
+                }
+
+                div.gallery:hover {
+                    border: 1px solid #777;
+                }
+
+                div.gallery img {
+                    width: 100%;
+                }
+
+                div.desc {
+                    padding: 1%;
+                    text-align: left;
+                }
+
+                .clearfix:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                header {
+                    height: 47.5%;
+                    margin-top: -10%;
+                    transform: skewY(-9deg); 
+                    transform-origin: bottom left;
+                    z-index: -1;
+                }
+
+                footer {
+                    width: 98%;
+                    margin: 0 auto;
+                }
+
+                .background2 {
+                    background-color: #f1f1f1;
+                    padding: 1%;
+                }
+
+                .footerPic {
+                    width: 30%;
+                    height: 20%;
+                    float: right;
+                    display: flex;
+                    margin-top: -30%;
+                }
+
+                .icon {
+                    display: flex;
+                    width: 2%;
+                    height: 2%;
+                }
+
+                .linkIcon {
+                    font-size: 200%;
+                }
+
+                #wrapper {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .contact {
+                    width: 40%;
+                    margin: 0 auto;
+                }
+
+                .dark-mode {
+                    background-color: black;
+                    color: white;
+                }
+
+                .background2-dark-mode {
+                    background-color: #303030;
+                    color: white;
+                }
+
+                .invert {
+                    filter: invert(1);
+                }
+            }
+            
+            /* Tablet screen layout */
+            @media (max-width: 800px) {
+                div.portrait {
+                    margin: 0 auto;
+                    border: 1px solid #ccc;
+                    width: 50%;
+                    height: 30%;
+                    align-content: center;
+                    display: flex;
+                    margin-top: -17%;
+                    z-index: 1;
+                    position: relative;
+                    margin-left: 25%;
+                }
+
+                div.aboutme {
+                    text-align: left;
+                    float: right;
+                    max-width: 50%;
+                    margin-right: 5%;
+                }
+
+                div.aboutMeIcons {
+                    position: absolute;
+                    top: 80%;
+                    left: 85%;
+                }
+
+                div.nameText {
+                    position: absolute;
+                    top: 80%;
+                    left: 0%;
+                    color: black;
+                }
+
+                div.gallery {
+                    margin: 1%;
+                    border: 1px solid #ccc;
+                    float: left;
+                    width: 31%;
+                    z-index: 1;
+                    position: relative;
+                }
+
+                div.gallery:hover {
+                    border: 1px solid #777;
+                }
+
+                div.gallery img {
+                    width: 100%;
+                }
+
+                div.desc {
+                    padding: 1%;
+                    text-align: left;
+                }
+
+                .clearfix:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                header {
+                    height: 47.5%;
+                    margin-top: -10%;
+                    transform: skewY(-9deg); 
+                    transform-origin: bottom left;
+                    z-index: -1;
+                }
+
+                footer {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .background2 {
+                    background-color: #f1f1f1;
+                    padding: 1%;
+                }
+
+                .footerPic {
+                    width: 30%;
+                    height: 20%;
+                    float: right;
+                    display: flex;
+                    margin-top: -30%;
+                }
+
+                .icon {
+                    display: flex;
+                    width: 2%;
+                    height: 2%;
+                }
+
+                .linkIcon {
+                    font-size: 200%;
+                }
+
+                #wrapper {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .contact {
+                    width: 40%;
+                    margin: 0 auto;
+                }
+
+                .dark-mode {
+                    background-color: black;
+                    color: white;
+                }
+
+                .background2-dark-mode {
+                    background-color: #303030;
+                    color: white;
+                }
+
+                .invert {
+                    filter: invert(1);
+                }
+            }
+
+            /* Phone screen layout */
+            @media (max-width: 500px) {
+                div.portrait {
+                    margin: 0 auto;
+                    border: 1px solid #ccc;
+                    width: 50%;
+                    height: 30%;
+                    align-content: center;
+                    display: flex;
+                    margin-top: -15%;
+                    z-index: 1;
+                    position: relative;
+                    margin-left: 25%;
+                }
+
+                div.aboutme {
+                    text-align: left;
+                    float: right;
+                    max-width: 50%;
+                    margin-right: 5%;
+                }
+
+                div.aboutMeIcons {
+                    position: absolute;
+                    top: 80%;
+                    left: 85%;
+                }
+
+                div.nameText {
+                    position: absolute;
+                    top: 80%;
+                    left: 0%;
+                    color: black;
+                }
+
+                div.gallery {
+                    margin: 1%;
+                    border: 1px solid #ccc;
+                    float: left;
+                    width: 31%;
+                    z-index: 1;
+                    position: relative;
+                }
+
+                div.gallery:hover {
+                    border: 1px solid #777;
+                }
+
+                div.gallery img {
+                    width: 100%;
+                }
+
+                div.desc {
+                    padding: 1%;
+                    text-align: left;
+                }
+
+                .clearfix:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                header {
+                    height: 47.5%;
+                    margin-top: -10%;
+                    transform: skewY(-9deg); 
+                    transform-origin: bottom left;
+                    z-index: -1;
+                }
+
+                footer {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .background2 {
+                    background-color: #f1f1f1;
+                    padding: 1%;
+                }
+
+                .footerPic {
+                    width: 30%;
+                    height: 20%;
+                    float: right;
+                    display: flex;
+                    margin-top: -30%;
+                }
+
+                .icon {
+                    display: flex;
+                    width: 2%;
+                    height: 2%;
+                }
+
+                .linkIcon {
+                    font-size: 200%;
+                }
+
+                #wrapper {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .contact {
+                    width: 40%;
+                    margin: 0 auto;
+                }
+
+                .dark-mode {
+                    background-color: black;
+                    color: white;
+                }
+
+                .background2-dark-mode {
+                    background-color: #303030;
+                    color: white;
+                }
+
+                .invert {
+                    filter: invert(1);
+                }
+            }
+        </style>
+        <script>
+            function nightMode() {
+                var element = document.body;
+                var bgElement = document.getElementsByClassName("background2")[0];
+                var bgElement2 = document.getElementsByClassName("background2")[1];
+                element.classList.toggle("dark-mode");
+                bgElement.classList.toggle("background2-dark-mode");
+                bgElement2.classList.toggle("background2-dark-mode");
+                var iconInverts = document.getElementsByClassName("invertIcon");
+                for(var i = 0; i < iconInverts.length; i++){
+                    iconInverts[i].classList.toggle("invert");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header class="background2"></header>
+        <div id="wrapper">
+            <button onclick="nightMode()" class="invertIcon" style="float:left;z-index:0;position:relative;display:flex;">Toggle Night Mode</button>
+            <div class="portrait">
+                <a target="_blank" href="necoarcspray.jpg">
+                    <img src="necoarcspray.jpg" alt="It's me! Kinda." style="width:90%;height:115%;margin-top:-5%">
+                </a>
+                <div class="aboutme">
+                    <h1>About Me</h1>
+                    <p>Do you ever get the feeling you're forgetting something when you leave home, but no matter how many times you check you're not missing anything? Yeah, that's me. Sorry about that.</p>
+                </div>
+                <div class="aboutMeIcons">
+                    <i class="devicon-github-original linkIcon"></i>
+                    <i class="devicon-linkedin-plain linkIcon"></i>
+                    <i class="devicon-twitter-original linkIcon"></i>
+                </div>
+                <div class="nameText">
+                    <h1>Big Bob</h1>
+                </div>
+            </div>
+            <br>
+            <h1 style="z-index:0;position:relative;margin-left:1%;">My Work</h1>
+            <div class="gallery">
+                <a target="_blank" href="1.jpg">
+                    <img src="1.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                </a>
+                <div class="desc">
+                    <h4>Project</h4>
+                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <p>Allan please add description</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="2.jpg">
+                    <img src="2.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                </a>
+                <div class="desc">
+                    <h4>Project</h4>
+                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <p>Allan please add description</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="3.jpg">
+                    <img src="3.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                </a>
+                <div class="desc">
+                    <h4>Project</h4>
+                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <p>Allan please add description</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="4.jpg">
+                    <img src="4.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                </a>
+                <div class="desc">
+                    <h4>Project</h4>
+                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <p>Allan please add description</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="5.jpg">
+                    <img src="5.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                </a>
+                <div class="desc">
+                    <h4>Project</h4>
+                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <p>Allan please add description</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="6.jpg">
+                    <img src="6.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                </a>
+                <div class="desc">
+                    <h4>Project</h4>
+                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                    <p>Allan please add description</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <footer class="background2">
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <p class="word">Like my stuff? Gimme a call! Or email! Or text! Skype me for all I care!</p>
+                <p class="word address">4444 Big Bill Hell's Cars<br>Baltimore, Maryland</p>
+                <div class="icon">
+                    <img src="phone.svg" alt="call" class="invertIcon">(444)888-1212
+                </div>
+                <div class="icon">
+                    <img src="email-outline.svg" alt="email" class="invertIcon">bobobobob@gmail.com
+                </div>
+                <div>  
+                    <i class="devicon-github-original linkIcon"></i>
+                    <i class="devicon-linkedin-plain linkIcon"></i>
+                    <i class="devicon-twitter-original linkIcon"></i>
+                </div>
+                <img src="necoarcspray.jpg" alt="boxed bliss" class="footerPic">
+            </div>
+        </footer>
+    </body>
+</html>
