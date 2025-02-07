@@ -1,4 +1,4 @@
-Howdy!
+Howdy, reader! Hope you're having a good day! Enjoy the overabundance of Neco Arc used as placeholder pictures!
 
 Screenshots!
 --------------------
