@@ -1,0 +1,426 @@
+@media (min-width: 1200px) {
+    /*
+    body {
+        background-image: linear-gradient(to bottom right, #3f004a, #ad0ec9);
+    }
+    */
+
+    div.portrait {
+        margin: 0 auto;
+        width: 50%;
+        height: 30%;
+        align-content: center;
+        display: flex;
+        margin-top: 1.5%;
+        z-index: 1;
+        position: relative;
+        margin-left: 25%;
+        border: 1px solid black;
+    }
+
+    .portraitPhoto {
+        width: 50%;
+        height: 100%;
+        margin-left: -5%;
+        border: 1px solid black
+    }
+
+    div.aboutme {
+        text-align: left;
+        float: right;
+        max-width: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    div.aboutMeIcons {
+        position: absolute;
+        top: 90%;
+        left: 85%;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    div.nameText {
+        position: absolute;
+        top: 85%;
+        left: 0%;
+        color: white;
+    }
+
+    div.gallery {
+        margin: 1%;
+        border: 1px solid #ccc;
+        float: left;
+        width: 31%;
+        z-index: 1;
+        position: relative;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+    }
+
+    div.desc {
+        padding: 1%;
+        text-align: left;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    header {
+        height: 47.5%;
+        margin-top: -10%;
+        transform: skewY(-9deg); 
+        transform-origin: bottom left;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+    }
+
+    footer {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .background2 {
+        background-color: #f1f1f1;
+        padding: 1%;
+    }
+
+    .footerPic {
+        width: 30%;
+        height: 20%;
+        float: right;
+        display: flex;
+        margin-top: -30%;
+    }
+
+    .icon {
+        display: flex;
+        width: 2%;
+        height: 2%;
+    }
+
+    .linkIcon {
+        font-size: 200%;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .background2-dark-mode {
+        background-color: #303030;
+        color: white;
+    }
+
+    .invert {
+        filter: invert(1);
+    }
+
+    .borderInvert {
+        border-color: white;
+    }
+}
+
+/* Tablet screen layout */
+@media (max-width: 1200px) {
+    div.portrait {
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        width: 50%;
+        height: 25%;
+        align-content: center;
+        display: flex;
+        margin-top: 7.5%;
+        z-index: 1;
+        position: relative;
+        margin-left: 25%;
+    }
+
+    .portraitPhoto {
+        width: 100%;
+        height: 90%;
+        margin-top: -20%;
+        margin-left: -10%;
+    }
+
+    div.aboutme {
+        text-align: left;
+        float: right;
+        max-width: 50%;
+        margin-right: 5%;
+    }
+
+    div.aboutMeIcons {
+        position: absolute;
+        top: 78%;
+        left: 10%;
+    }
+
+    div.nameText {
+        position: absolute;
+        top: -25%;
+        left: 40%;
+    }
+
+    div.gallery {
+        margin: 1%;
+        border: 1px solid #ccc;
+        float: left;
+        width: 47%;
+        z-index: 1;
+        position: relative;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+    }
+
+    div.desc {
+        padding: 1%;
+        text-align: left;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    header {
+        height: 47.5%;
+        margin-top: -10%;
+        transform: skewY(-9deg); 
+        transform-origin: bottom left;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .background2 {
+        background-color: #f1f1f1;
+        padding: 1%;
+    }
+
+    .footerPic {
+        width: 80%;
+        height: 40%;
+        display: flex;
+        margin-left: 150%;
+        margin-top: -80%;
+    }
+
+    .icon {
+        display: flex;
+        width: 2%;
+        height: 2%;
+    }
+
+    .linkIcon {
+        font-size: 200%;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        width: 40%;
+        margin: 0 auto;
+        margin-left: 0%;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .background2-dark-mode {
+        background-color: #303030;
+        color: white;
+    }
+
+    .invert {
+        filter: invert(1);
+    }
+
+    .nightButton {
+        position: relative;
+        margin-top: -7%;
+        left: 5;
+        z-index: 3;
+    }
+}
+
+/* Phone screen layout */
+@media (max-width: 800px) {
+    div.portrait {
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        width: 90%;
+        height: 60%;
+        align-content: center;
+        display: flex;
+        z-index: 1;
+        position: relative;
+        margin-top: 10%;
+    }
+
+    .portraitPhoto {
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    div.aboutme {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+    }
+
+    div.aboutMeIcons {
+        position: absolute;
+        top: 90%;
+        left: 35%;
+    }
+
+    div.nameText {
+        position: absolute;
+        top: 35%;
+        left: 0%;
+        color: black;
+    }
+
+    div.gallery {
+        margin: 1%;
+        border: 1px solid #ccc;
+        float: left;
+        width: 90%;
+        z-index: 1;
+        position: relative;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+    }
+
+    div.desc {
+        padding: 1%;
+        text-align: left;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    header {
+        height: 70%;
+        margin-top: -50%;
+        transform: skewY(-9deg); 
+        transform-origin: bottom left;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .background2 {
+        background-color: #f1f1f1;
+        padding: 1%;
+    }
+
+    .footerPic {
+        width: 100%;
+        height: 50%;
+        float: right;
+        display: flex;
+        margin: 0 auto;
+        margin-left: -30%;
+        position: absolute;
+    }
+
+    .icon {
+        display: flex;
+        width: 2%;
+        height: 2%;
+    }
+
+    .linkIcon {
+        font-size: 200%;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .background2-dark-mode {
+        background-color: #303030;
+        color: white;
+    }
+
+    .invert {
+        filter: invert(1);
+    }
+
+    .nightButton {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+}

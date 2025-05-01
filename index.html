@@ -1,522 +1,115 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Homepage</title>
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
-        <style>
-            /* Computer screen layout */
-            @media (min-width: 1200px) {
-                div.portrait {
-                    margin: 0 auto;
-                    border: 1px solid #ccc;
-                    width: 50%;
-                    height: 30%;
-                    align-content: center;
-                    display: flex;
-                    margin-top: 1.5%;
-                    z-index: 1;
-                    position: relative;
-                    margin-left: 25%;
-                }
-
-                .portraitPhoto {
-                    width: 90%;
-                    height: 115%;
-                    margin-top: -5%;
-                }
-
-                div.aboutme {
-                    text-align: left;
-                    float: right;
-                    max-width: 50%;
-                    margin-right: 5%;
-                }
-
-                div.aboutMeIcons {
-                    position: absolute;
-                    top: 80%;
-                    left: 80%;
-                }
-
-                div.nameText {
-                    position: absolute;
-                    top: 85%;
-                    left: 0%;
-                    color: black;
-                }
-
-                div.gallery {
-                    margin: 1%;
-                    border: 1px solid #ccc;
-                    float: left;
-                    width: 31%;
-                    z-index: 1;
-                    position: relative;
-                }
-
-                div.gallery:hover {
-                    border: 1px solid #777;
-                }
-
-                div.gallery img {
-                    width: 100%;
-                }
-
-                div.desc {
-                    padding: 1%;
-                    text-align: left;
-                }
-
-                .clearfix:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-
-                header {
-                    height: 47.5%;
-                    margin-top: -10%;
-                    transform: skewY(-9deg); 
-                    transform-origin: bottom left;
-                    z-index: -1;
-                    position: absolute;
-                    width: 100%;
-                }
-
-                footer {
-                    width: 98%;
-                    margin: 0 auto;
-                }
-
-                .background2 {
-                    background-color: #f1f1f1;
-                    padding: 1%;
-                }
-
-                .footerPic {
-                    width: 30%;
-                    height: 20%;
-                    float: right;
-                    display: flex;
-                    margin-top: -30%;
-                }
-
-                .icon {
-                    display: flex;
-                    width: 2%;
-                    height: 2%;
-                }
-
-                .linkIcon {
-                    font-size: 200%;
-                }
-
-                #wrapper {
-                    width: 100%;
-                    margin: 0 auto;
-                }
-
-                .contact {
-                    width: 40%;
-                    margin: 0 auto;
-                }
-
-                .dark-mode {
-                    background-color: black;
-                    color: white;
-                }
-
-                .background2-dark-mode {
-                    background-color: #303030;
-                    color: white;
-                }
-
-                .invert {
-                    filter: invert(1);
-                }
-            }
-            
-            /* Tablet screen layout */
-            @media (max-width: 1200px) {
-                div.portrait {
-                    margin: 0 auto;
-                    border: 1px solid #ccc;
-                    width: 50%;
-                    height: 25%;
-                    align-content: center;
-                    display: flex;
-                    margin-top: 7.5%;
-                    z-index: 1;
-                    position: relative;
-                    margin-left: 25%;
-                }
-
-                .portraitPhoto {
-                    width: 100%;
-                    height: 90%;
-                    margin-top: -20%;
-                    margin-left: -10%;
-                }
-
-                div.aboutme {
-                    text-align: left;
-                    float: right;
-                    max-width: 50%;
-                    margin-right: 5%;
-                }
-
-                div.aboutMeIcons {
-                    position: absolute;
-                    top: 78%;
-                    left: 10%;
-                }
-
-                div.nameText {
-                    position: absolute;
-                    top: -25%;
-                    left: 40%;
-                }
-
-                div.gallery {
-                    margin: 1%;
-                    border: 1px solid #ccc;
-                    float: left;
-                    width: 47%;
-                    z-index: 1;
-                    position: relative;
-                }
-
-                div.gallery:hover {
-                    border: 1px solid #777;
-                }
-
-                div.gallery img {
-                    width: 100%;
-                }
-
-                div.desc {
-                    padding: 1%;
-                    text-align: left;
-                }
-
-                .clearfix:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-
-                header {
-                    height: 47.5%;
-                    margin-top: -10%;
-                    transform: skewY(-9deg); 
-                    transform-origin: bottom left;
-                    z-index: -1;
-                    position: absolute;
-                    width: 100%;
-                }
-
-                footer {
-                    width: 100%;
-                    margin: 0 auto;
-                }
-
-                .background2 {
-                    background-color: #f1f1f1;
-                    padding: 1%;
-                }
-
-                .footerPic {
-                    width: 80%;
-                    height: 40%;
-                    display: flex;
-                    margin-left: 150%;
-                    margin-top: -80%;
-                }
-
-                .icon {
-                    display: flex;
-                    width: 2%;
-                    height: 2%;
-                }
-
-                .linkIcon {
-                    font-size: 200%;
-                }
-
-                #wrapper {
-                    width: 100%;
-                    margin: 0 auto;
-                }
-
-                .contact {
-                    width: 40%;
-                    margin: 0 auto;
-                    margin-left: 0%;
-                }
-
-                .dark-mode {
-                    background-color: black;
-                    color: white;
-                }
-
-                .background2-dark-mode {
-                    background-color: #303030;
-                    color: white;
-                }
-
-                .invert {
-                    filter: invert(1);
-                }
-
-                .nightButton {
-                    position: relative;
-                    margin-top: -7%;
-                    left: 5;
-                    z-index: 3;
-                }
-            }
-
-            /* Phone screen layout */
-            @media (max-width: 800px) {
-                div.portrait {
-                    margin: 0 auto;
-                    border: 1px solid #ccc;
-                    width: 90%;
-                    height: 60%;
-                    align-content: center;
-                    display: flex;
-                    z-index: 1;
-                    position: relative;
-                    margin-top: 10%;
-                }
-
-                .portraitPhoto {
-                    width: 100%;
-                    height: 50%;
-                    margin: 0 auto;
-                }
-
-                div.aboutme {
-                    text-align: left;
-                    position: absolute;
-                    top: 50%;
-                }
-
-                div.aboutMeIcons {
-                    position: absolute;
-                    top: 90%;
-                    left: 35%;
-                }
-
-                div.nameText {
-                    position: absolute;
-                    top: 35%;
-                    left: 0%;
-                    color: black;
-                }
-
-                div.gallery {
-                    margin: 1%;
-                    border: 1px solid #ccc;
-                    float: left;
-                    width: 90%;
-                    z-index: 1;
-                    position: relative;
-                }
-
-                div.gallery:hover {
-                    border: 1px solid #777;
-                }
-
-                div.gallery img {
-                    width: 100%;
-                }
-
-                div.desc {
-                    padding: 1%;
-                    text-align: left;
-                }
-
-                .clearfix:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-
-                header {
-                    height: 70%;
-                    margin-top: -50%;
-                    transform: skewY(-9deg); 
-                    transform-origin: bottom left;
-                    z-index: -1;
-                    position: absolute;
-                    width: 100%;
-                }
-
-                footer {
-                    width: 100%;
-                    margin: 0 auto;
-                }
-
-                .background2 {
-                    background-color: #f1f1f1;
-                    padding: 1%;
-                }
-
-                .footerPic {
-                    width: 100%;
-                    height: 50%;
-                    float: right;
-                    display: flex;
-                    margin: 0 auto;
-                    margin-left: -30%;
-                    position: absolute;
-                }
-
-                .icon {
-                    display: flex;
-                    width: 2%;
-                    height: 2%;
-                }
-
-                .linkIcon {
-                    font-size: 200%;
-                }
-
-                #wrapper {
-                    width: 100%;
-                    margin: 0 auto;
-                }
-
-                .contact {
-                    width: 40%;
-                    margin: 0 auto;
-                }
-
-                .dark-mode {
-                    background-color: black;
-                    color: white;
-                }
-
-                .background2-dark-mode {
-                    background-color: #303030;
-                    color: white;
-                }
-
-                .invert {
-                    filter: invert(1);
-                }
-
-                .nightButton {
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    z-index: 3;
-                }
-            }
-        </style>
-        <script>
-            function nightMode() {
-                var element = document.body;
-                var bgElement = document.getElementsByClassName("background2")[0];
-                var bgElement2 = document.getElementsByClassName("background2")[1];
-                element.classList.toggle("dark-mode");
-                bgElement.classList.toggle("background2-dark-mode");
-                bgElement2.classList.toggle("background2-dark-mode");
-                var iconInverts = document.getElementsByClassName("invertIcon");
-                for(var i = 0; i < iconInverts.length; i++){
-                    iconInverts[i].classList.toggle("invert");
-                }
-            }
-        </script>
+        <link rel="stylesheet" href="styles.css"/>
+        
+        <script src="script.js"></script>
     </head>
     <body>
         <header class="background2"></header>
         <div id="wrapper">
             <button onclick="nightMode()" class="invertIcon nightButton" style="float:left;z-index:0;position:relative;display:flex;">Toggle Night Mode</button>
-            <div class="portrait">
-                <a target="_blank" href="necoarcspray.jpg">
-                    <img src="necoarcspray.jpg" alt="It's me! Kinda." class="portraitPhoto">
-                </a>
+            <div class="portrait invertBorder">
+                <img src="Assets/WesleyEsportsMediaPic.jpg" alt="It's a picture of me!" class="portraitPhoto invertBorder">
                 <div class="aboutme">
                     <h1>About Me</h1>
-                    <p>Do you ever get the feeling you're forgetting something when you leave home, but no matter how many times you check you're not missing anything? Yeah, that's me. Sorry about that.</p>
+                    <p>
+                        Do you ever get the feeling you're forgetting something when you leave home, but no matter how many times you check you're not missing anything? 
+                        Yeah, that's me. Sorry about that. <br><br>
+                        I'm a Computer Science major at Oklahoma City University colloquially known as "the guy on campus wearing 
+                        the funny hat all the time" to my fellow students. I've done many things in my life - I've become an Eagle scout, got a metal bar inserted into my 
+                        chest, briefly participated in a coup for a fictional state, played at least one game of Dungeons and Dragons, participated against my will in 
+                        approximately seven different sports, broke both my arms at the same time, got patted down by TSA for cajun seasoning, watched the hit 2006 movie 
+                        Robots, broke both my arms at the same time again, and even ate at a Denny's - all in no particular order, of course. A pretty spiffy trophy shelf 
+                        if I do say so myself. <br><br> 
+                        This website is a portfolio of my works meant to look good on job applications. "Wow, this guy can make websites!" That's what the intended effect 
+                        is. Contact information at the footer if you got any questions for me, or if you want me to talk about cephalopods for an uncomfortably long time.
+                    </p>
                 </div>
                 <div class="aboutMeIcons">
-                    <i class="devicon-github-original linkIcon"></i>
-                    <i class="devicon-linkedin-plain linkIcon"></i>
-                    <i class="devicon-twitter-original linkIcon"></i>
+                    <a target="_blank" href="https://github.com/BroadsideBob">
+                        <i class="devicon-github-original linkIcon"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/wesley-farnsley-7aa487290/">
+                        <i class="devicon-linkedin-plain linkIcon"></i>
+                    </a>
+                    <a target="_blank" href="https://www.tumblr.com/pageofbob" onClick="alert('Twitter stinks. Have my Tumblr instead!')">
+                        <i class="devicon-twitter-original linkIcon"></i>
+                    </a>
                 </div>
                 <div class="nameText">
-                    <h1>Big Bob</h1>
+                    <h1>Wesley D. Farnsley</h1>
                 </div>
             </div>
             <br>
             <h1 style="z-index:0;position:relative;margin-left:1%;">My Work</h1>
             <div class="gallery">
-                <a target="_blank" href="1.jpg">
-                    <img src="1.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                <a target="_blank" href="https://github.com/BroadsideBob/OdinProjectHomepage">
+                    <img src="Assets/1.jpg" alt="Picture of this webpage, but all photos are replaced by Neco Arc from Melty Blood. Wow!" style="width:100%;height:30%">
+                    <div class="desc">
+                        <h4>This Website</h4>
+                        <img src="Assets/github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <img src="Assets/open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <p>Woah, it's just like that one movie from 2010 with the funny horn sound effect that I never watched!</p>
+                    </div>
                 </a>
-                <div class="desc">
-                    <h4>Project</h4>
-                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <p>Allan please add description</p>
-                </div>
             </div>
             <div class="gallery">
-                <a target="_blank" href="2.jpg">
-                    <img src="2.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                <a target="_blank" href="https://github.com/BroadsideBob/ProjectOdinApplication">
+                    <img src="Assets/2.jpg" alt="Picture of a digital CV application form." style="width:100%;height:30%">
+                    <div class="desc">
+                        <h4>CV Application</h4>
+                        <img src="Assets/github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <img src="Assets/open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <p>Background checks not included.</p>
+                    </div>
                 </a>
-                <div class="desc">
-                    <h4>Project</h4>
-                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <p>Allan please add description</p>
-                </div>
             </div>
             <div class="gallery">
-                <a target="_blank" href="3.jpg">
-                    <img src="3.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                <a target="_blank" href="https://github.com/BroadsideBob/ProjectOdinTicTacToe">
+                    <img src="Assets/3.jpg" alt="Picture of a simple Tic Tac Toe game." style="width:100%;height:30%">
+                    <div class="desc">
+                        <h4>Tic Tac Toe</h4>
+                        <img src="Assets/github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <img src="Assets/open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <p>I may not know how to always win, but I sure do know how to always lose.</p>
+                    </div>
                 </a>
-                <div class="desc">
-                    <h4>Project</h4>
-                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <p>Allan please add description</p>
-                </div>
             </div>
             <div class="gallery">
-                <a target="_blank" href="4.jpg">
-                    <img src="4.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                <a target="_blank" href="https://github.com/BroadsideBob/ProjectOdinMemoryCards">
+                    <img src="Assets/4.jpg" alt="Picture of a memory card game featuring jokers from the game Balatro." style="width:100%;height:30%">
+                    <div class="desc">
+                        <h4>Remember Jimbo?</h4>
+                        <img src="Assets/github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <img src="Assets/open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <p>Gros Michel my beloved</p>
+                    </div>
                 </a>
-                <div class="desc">
-                    <h4>Project</h4>
-                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <p>Allan please add description</p>
-                </div>
             </div>
             <div class="gallery">
-                <a target="_blank" href="5.jpg">
-                    <img src="5.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                <a target="_blank" href="https://github.com/BroadsideBob/ProjectOdinLibrary">
+                    <img src="Assets/5.jpg" alt="Picture of a personal library cataloguing website." style="width:100%;height:30%">
+                    <div class="desc">
+                        <h4>Library</h4>
+                        <img src="Assets/github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <img src="Assets/open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <p>My favorite author is Neal Shusterman. Give Scythe a read, it's one of my favorite books of all time.</p>
+                    </div>
                 </a>
-                <div class="desc">
-                    <h4>Project</h4>
-                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <p>Allan please add description</p>
-                </div>
             </div>
             <div class="gallery">
-                <a target="_blank" href="6.jpg">
-                    <img src="6.jpg" alt="Allan please add alt text" style="width:100%;height:30%">
+                <a target="_blank" href="https://github.com/BroadsideBob/f23csci2114hw7farnsley">
+                    <img src="Assets/6.jpg" alt="Close-up of Leonhard Euler." style="width:100%;height:30%">
+                    <div class="desc">
+                        <h4>Project Euler Problems</h4>
+                        <img src="Assets/github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <img src="Assets/open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
+                        <p>A collection of personal solutions to questions on Project Euler.</p>
+                    </div>
                 </a>
-                <div class="desc">
-                    <h4>Project</h4>
-                    <img src="github.svg" alt="github" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <img src="open-in-new.svg" alt="open new tab" style="width:5%;height:5%;float:right;" class="invertIcon">
-                    <p>Allan please add description</p>
-                </div>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -524,19 +117,25 @@
             <div class="contact">
                 <h2>Contact Me</h2>
                 <p class="word">Like my stuff? Gimme a call! Or email! Or text! Skype me for all I care!</p>
-                <p class="word address">4444 Big Bill Hell's Cars<br>Baltimore, Maryland</p>
+                <p class="word address">21208 Bogie Rd<br>Edmond, Oklahoma</p>
                 <div class="icon">
-                    <img src="phone.svg" alt="call" class="invertIcon">(444)888-1212
+                    <img src="Assets/phone.svg" alt="call" class="invertIcon">(405)432-3867
                 </div>
                 <div class="icon">
-                    <img src="email-outline.svg" alt="email" class="invertIcon">bobobobob@gmail.com
+                    <img src="Assets/email-outline.svg" alt="email" class="invertIcon">wesfarn@outlook.com
                 </div>
                 <div>  
-                    <i class="devicon-github-original linkIcon"></i>
-                    <i class="devicon-linkedin-plain linkIcon"></i>
-                    <i class="devicon-twitter-original linkIcon"></i>
+                    <a target="_blank" href="https://github.com/BroadsideBob">
+                        <i class="devicon-github-original linkIcon"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/wesley-farnsley-7aa487290/">
+                        <i class="devicon-linkedin-plain linkIcon"></i>
+                    </a>
+                    <a target="_blank" href="https://www.tumblr.com/pageofbob" onClick="alert('Twitter stinks. Have my Tumblr instead!')">
+                        <i class="devicon-twitter-original linkIcon"></i>
+                    </a>
                 </div>
-                <img src="necoarcspray.jpg" alt="Me again! But not really." class="footerPic">
+                <img src="Assets/necoarcspray.jpg" alt="Picture of Neco Arc from Melty Blood." class="footerPic">
             </div>
         </footer>
     </body>
